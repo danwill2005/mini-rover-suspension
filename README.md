@@ -18,34 +18,6 @@ Focus areas:
 
 ---
 
-## Repository Structure
-```
-mini-rover-suspension/
-│
-├── CAD/                     # Fusion 360 (.f3d) and STEP files
-│   ├── wheel_v1.f3d
-│   ├── rocker_arm_v1.f3d
-│   └── assembly_v1.step
-│
-├── Simulation/              # FEA results and MATLAB code
-│   ├── wheel_stress.png
-│   ├── rocker_arm_FEA.pdf
-│   └── terrain_sim.m
-│
-├── Docs/                    # Notes, references, design decisions
-│   ├── design_notes.md
-│   └── references.md
-│
-├── Media/                   # Renders, diagrams, animations
-│   ├── wheel_render.png
-│   └── suspension_motion.gif
-│
-├── README.md                # This file
-└── LICENSE                  # MIT or similar
-```
-
----
-
 ## Tools Used
 - **Fusion 360** → CAD modeling, assemblies, FEA simulation  
 - **MATLAB** → (optional) terrain + statics simulation  
