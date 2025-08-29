@@ -123,7 +123,7 @@ LICENSE
 
 ## Preview
 *(Add renders, simulation screenshots, and plots as you generate them.)*
-###Six wheel support and tread variations
+### Six wheel support and tread variations
 <img width="2369" height="1456" alt="Screenshot 2025-08-29 200325" src="https://github.com/user-attachments/assets/ba4453a9-06e0-45d9-bf37-c011846ad612" />
 <img width="2336" height="1487" alt="Screenshot 2025-08-29 200311" src="https://github.com/user-attachments/assets/1e4f4e9a-0d9e-4c73-8e98-ecd478bafc21" />
 <img width="2350" height="1498" alt="Screenshot 2025-08-29 200259" src="https://github.com/user-attachments/assets/8af2e343-115f-4fad-b2c9-830bf900e531" />
