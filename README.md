@@ -112,13 +112,20 @@ LICENSE
 
 ## Preview
 *(Add renders, simulation screenshots, and plots as you generate them.)*
+
 ### Six wheel support and tread variations
+
 <img width="2369" height="1456" alt="Screenshot 2025-08-29 200325" src="https://github.com/user-attachments/assets/ba4453a9-06e0-45d9-bf37-c011846ad612" />
 <img width="2336" height="1487" alt="Screenshot 2025-08-29 200311" src="https://github.com/user-attachments/assets/1e4f4e9a-0d9e-4c73-8e98-ecd478bafc21" />
 <img width="2350" height="1498" alt="Screenshot 2025-08-29 200259" src="https://github.com/user-attachments/assets/8af2e343-115f-4fad-b2c9-830bf900e531" />
 <img width="2361" height="1505" alt="Screenshot 2025-08-29 200214" src="https://github.com/user-attachments/assets/cd5cfd2a-30e6-40da-a80a-dd4f1eb87ea9" />
 <img width="2365" height="1496" alt="Screenshot 2025-08-29 200200" src="https://github.com/user-attachments/assets/76664cc3-0141-495e-8f96-da3a880ac196" />
 <img width="2359" height="1518" alt="Screenshot 2025-08-29 200050" src="https://github.com/user-attachments/assets/e0c8d819-a2ea-4fff-96e4-f41a2995c13e" />
+
+###FEA Analysis of wheel variations
+
+<img width="2349" height="1451" alt="Screenshot 2025-09-13 005555" src="https://github.com/user-attachments/assets/cb638cce-07fa-44b1-a895-32fa8862ddea" />
+<img width="2364" height="1436" alt="Screenshot 2025-09-13 005708" src="https://github.com/user-attachments/assets/24f647f5-a20c-4f4e-a778-6eeab08740bc" />
 
 ---
 
@@ -128,4 +135,4 @@ MIT License — see `LICENSE`.
 ---
 
 ## Author
-Created by **Daniel Williams** — combining interests in **rovers, robotics, and motorsport suspension systems**.
+Created by **Daniel Williams** — combining interests in **rovers, and motorsport suspension systems**.
