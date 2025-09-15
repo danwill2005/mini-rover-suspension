@@ -85,7 +85,7 @@ LICENSE
 ### Fusion 360 (FEA)
 - Study: **Static Stress**.  
 - Constraints: fix axle bore (or shaft), bonded contacts.  
-- Loads: vertical ~100 N, lateral 50–80 N, drive torque 2–5 N·m (adjust to your rover).  
+- Loads: vertical 30 N (adjust to your rover).  
 - Mesh: refine at spoke/hub junctions, honeycomb webs, tread roots.  
 - Export screenshots + metrics table.
 
