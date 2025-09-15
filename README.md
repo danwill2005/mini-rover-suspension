@@ -31,14 +31,14 @@ Design, simulate, and analyze a functional **wheel + suspension assembly** inspi
 
 ## Experiment Plan
 
-### Phase 1 — Support Structure Selection (fix chosen tread)
+### Phase 1 — Support Structure Selection
 **Goal:** Pick the internal support with best strength-to-weight.
 - Methods: **Fusion 360 Static FEA** under vertical load
 - Record: **mass**, **max von Mises**, **FoS**, **max displacement**
 - Outputs: `Simulation/fea_wheels/` → screenshots + `FEA analysis.csv`
 - Decision: Choose **one support structure**.
 
-### Phase 2 — Tread Selection (hold support structure constant per pair)
+### Phase 2 — Tread Selection
 **Goal:** Pick the tread with the best traction.
 - Method: **MATLAB Terramechanics** → peak drawbar pull & slip-at-peak on a chosen soil model
 - Outputs: `Simulation/traction/` → ramp GIFs, `results_drawbar_vs_slip.png`, `results_summary.csv`
