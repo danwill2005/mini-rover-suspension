@@ -94,11 +94,11 @@ LICENSE
 ## Project Roadmap
 - [x] **Research** Settled on spokes and honeycomb support, chevron, straight bar, and knob treads
 - [x] **CAD** six wheel variants built (3 treads × 2 supports)  
-- [ ] **Phase 1: FEA (support structure choice)**  
-  - [ ] Fusion FEA on wheels  
-  - [ ] Stress vs displacement comparison
-  - [ ] Mass vs Factor of Safety comparison    
-  - [ ] Decide best **support**
+- [x] **Phase 1: FEA (support structure choice)**  
+  - [x] Fusion FEA on wheels  
+  - [x] Stress vs displacement comparison
+  - [x] Mass vs Factor of Safety comparison    
+  - [x] Decide best **support**
 - [ ] **Phase 2: Traction (tread choice)**   
   - [ ] MATLAB drawbar vs slip plots + summary CSV  
   - [ ] Decide best **tread**
