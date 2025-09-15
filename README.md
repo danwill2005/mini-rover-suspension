@@ -60,7 +60,7 @@ CAD/
 Simulation/
   traction/
     MATLAB/              # 
-  fea_wheels/		 # six FEA analyses, FEA results summary table, MATLAB plots of FEA results, Results and Discussion 
+  fea_wheels/		 # FEA results summary table, MATLAB plots of FEA results, Results and Discussion 
   fea_assembly/
 Docs/			 # Wheel Design Research and development
 Media/
