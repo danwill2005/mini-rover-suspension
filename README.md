@@ -15,9 +15,9 @@ Design, simulate, and analyze a functional **wheel + suspension assembly** inspi
 ## Features
 - **Six CAD wheel variants**: 3 treads (straight bars, chevrons, knobs) × 2 supports (spokes, honeycomb)
 - **Structural analysis (FEA)**: Fusion 360 static stress on hubs/rims/support structures
-- **Traction analysis**: MATLAB terramechanics (drawbar vs. slip)
 - **Rocker-arm suspension**: kinematics + assembly
 - **Weight distribution analysis**: MATLAB statics pass on the corner/suspension after selection
+- **Traction analysis**: MATLAB terramechanics (drawbar vs. slip)
 - **Motion study**: simple uneven-terrain traversal animation
 
 ---
@@ -38,25 +38,23 @@ Design, simulate, and analyze a functional **wheel + suspension assembly** inspi
 - Outputs: `Simulation/fea_wheels/` → screenshots + `FEA analysis.csv`
 - Decision: Choose **one support structure**.
 
-### Phase 2 — Tread Selection
-**Goal:** Pick the tread with the best traction.
-- Method: **MATLAB Terramechanics** → peak drawbar pull & slip-at-peak on a chosen soil model
-- Outputs: `Simulation/traction/` → ramp GIFs, `results_drawbar_vs_slip.png`, `results_summary.csv`
-- Decision: Choose **one tread** to carry forward.
-
-### Phase 3 — Suspension (Rocker Arm) + System Check
+### Phase 2 — Suspension (Rocker Arm) + System Check
 **Goal:** Integrate and validate.
 - Build rocker arm + axle interface; set joints/constraints in Fusion 360.
 - **Weight distribution** (MATLAB statics): re-check normal loads per wheel; update load cases.
-- Optional: coarse assembly FEA (wheel + rocker corner) and motion animation over a step/rock.
+- Optional: motion animation over a step/rock.
 
+### Phase 3 — Tread Selection
+**Goal:** Pick the tread with the best traction.
+- Method: **MATLAB Terramechanics** → peak drawbar pull & slip-at-peak on a chosen soil model
+- Outputs: `Simulation/traction/` → ramp GIFs, `results_drawbar_vs_slip.png`, `results_summary.csv`
 ---
 
 ## Repo Layout
 ```
 CAD/
   wheels/                # six variants
-  rocker_arm/
+  rocker_arm/            # chassis + wheel assembly
 Simulation/
   traction/
     MATLAB/              # 
@@ -73,14 +71,6 @@ LICENSE
 ---
 
 ## How to Run Analyses
-### MATLAB (Traction)
-1. Place `rover_traction_compare.m` and `wheel_variants.csv` in `Simulation/traction/MATLAB/`.  
-2. Edit soil parameters in the script (defaults = dry sand).  
-3. Run:
-   ```matlab
-   rover_traction_compare
-   ```
-4. Collect: `results_drawbar_vs_slip.png`, `results_summary.csv`.
 
 ### Fusion 360 (FEA)
 - Study: **Static Stress**.  
@@ -88,6 +78,8 @@ LICENSE
 - Loads: vertical 30 N (adjust to your rover).  
 - Mesh: refine at spoke/hub junctions, honeycomb webs, tread roots.  
 - Export screenshots + metrics table.
+
+### MATLAB (Traction)
 
 ---
 
@@ -99,13 +91,14 @@ LICENSE
   - [x] Stress vs displacement comparison
   - [x] Mass vs Factor of Safety comparison    
   - [x] Decide best **support**
-- [ ] **Phase 2: Traction (tread choice)**   
+- [ ] **Phase 2: Suspension & System**  
+  - [x] Rocker arm CAD + joints
+  - [ ] FEA on chassis 
+  - [ ] MATLAB weight distribution update  
+  - [ ] Optional motion study
+- [ ] **Phase 3: Traction (tread choice)**   
   - [ ] MATLAB drawbar vs slip plots + summary CSV  
   - [ ] Decide best **tread**
-- [ ] **Phase 3: Suspension & System**  
-  - [ ] Rocker arm CAD + joints  
-  - [ ] MATLAB weight distribution update  
-  - [ ] Optional corner FEA + motion study  
 - [ ] Final renders + documentation
 
 ---
@@ -122,6 +115,12 @@ LICENSE
 
 <img width="2349" height="1451" alt="Screenshot 2025-09-13 005555" src="https://github.com/user-attachments/assets/cb638cce-07fa-44b1-a895-32fa8862ddea" />
 <img width="2364" height="1436" alt="Screenshot 2025-09-13 005708" src="https://github.com/user-attachments/assets/24f647f5-a20c-4f4e-a778-6eeab08740bc" />
+
+### Rocker-bogie suspension
+
+<img width="2346" height="1406" alt="Screenshot 2025-10-02 005725" src="https://github.com/user-attachments/assets/6e93c8d8-c7fd-48eb-9861-55b06dcd8999" />
+<img width="2304" height="1308" alt="Screenshot 2025-10-02 005819" src="https://github.com/user-attachments/assets/c078ca56-ec72-456d-b1a6-e3dbd33df175" />
+<img width="2249" height="1349" alt="Screenshot 2025-10-02 005848" src="https://github.com/user-attachments/assets/662d2782-7241-4b6f-8bd6-f3455452294e" />
 
 ---
 
