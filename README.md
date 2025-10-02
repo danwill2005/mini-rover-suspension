@@ -98,7 +98,6 @@ LICENSE
   - [ ] Optional motion study
 - [ ] **Phase 3: Traction (tread choice)**   
   - [ ] MATLAB drawbar vs slip plots + summary CSV  
-  - [ ] Decide best **tread**
 - [ ] Final renders + documentation
 
 ---
